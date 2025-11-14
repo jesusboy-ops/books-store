@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse and search books at Chokes Books Store. Filter by category or title.">
+  <title>Chokes Books Store | Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.js"></script>
+  
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-700 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-md">
+    <h1 class="text-2xl font-bold flex items-center">
+      <img src="WhatsApp_Image_2025-10-27_at_15.57.28_9c947915-removebg-preview.png" alt="Chokes logo" class="w-12  filter invert brightness-1000 inline-block mr-2">
+      Chokes Books Store
+    </h1>
+    <div class="flex space-x-4">
+      <a href="index.html" class="hover:text-blue-200 transition">Home</a>
+    
+    <a href="https://wa.me/2348127622738?text=Hello%20there!" class="hover:text-blue-200 transition">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Search + Filter -->
+  <section class="p-6 text-center bg-white shadow-sm sticky top-[76px] z-40">
+    <input 
+      id="searchInput"
+      type="text"
+      placeholder="🔍 Search by title or author..."
+      class="border border-gray-300 rounded-lg px-4 py-2 w-[80%] max-w-md focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+    >
+    
+    <select 
+      id="categoryFilter" 
+      class="border border-gray-300 rounded-lg px-4 py-2 ml-2 focus:ring-2 focus:ring-blue-500 transition"
+    >
+      <option value="all">All Categories</option>
+      <option value="fiction">Fiction</option>
+      <option value="tech">Horror</option>
+      
+    </select>
+  </section>
+
+  <!-- Books Grid -->
+  <section id="bookGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
+    <!-- JS will populate books here -->
+  </section>
+
+  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 Chokes Books Store. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+ >
+</body>
+</html>
