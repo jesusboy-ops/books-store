@@ -32,7 +32,7 @@ function displayBooks(filteredBooks) {
   bookGrid.innerHTML = "";
 
   filteredBooks.forEach(book => {
-    const fileName = "/books/" + generateFileName(book.title); // folder path included
+    const fileName = "../books/" + generateFileName(book.title); // folder path included
 
     const card = document.createElement("div");
     card.className = "bg-white p-4 rounded-xl shadow-md hover:shadow-xl transition";
