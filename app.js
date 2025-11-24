@@ -14,7 +14,7 @@ const books = [
   { title: "Chronicles of Ember", author: "R. Ash", category: "fiction", img: "/Ember Vulture (1).jpg" },
   { title: "The Hidden Realm", author: "V. Vale", category: "fiction", img: "/A cobblestone pathway lit by glowing magical runes, leading through an ancient enchanted forest.jpg" },
   { title: "Tales of the Silver Moon", author: "D. Luna", category: "fiction", img: "/download (6).jpg" },
-  { title: "Scary clown of the night", author: "D. Luna", category: "horror", img: "/WhatsApp Image 2025-11-14 at 12.13.56_99193f86.jpg" }
+  { title: "Scary clown of the night", author: "T. Loko", category: "horror", img: "/WhatsApp Image 2025-11-14 at 12.13.56_99193f86.jpg" }
 ];
 
 const bookGrid = document.getElementById("bookGrid");
@@ -40,7 +40,7 @@ function displayBooks(filteredBooks) {
       <img src="${book.img}" alt="${book.title}" class="rounded-lg w-full h-56 object-cover mb-4">
       <h3 class="text-xl font-bold mb-1">${book.title}</h3>
       <p class="text-gray-600 mb-1">by ${book.author}</p>
-      <a href="${fileName}" class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-800">Read Now</a>
+      <a href="${fileName}" class="inline-block bg-green-600 text-white px-4 py-2 rounded hover:bg-green-800">Read Now</a>
     `;
     bookGrid.appendChild(card);
   });
